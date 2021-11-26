@@ -46,6 +46,7 @@ body {
 }
 nav {
     height: 70px;
+    margin-bottom: 20px;
 }
 footer{
     background:#ccc;
@@ -78,11 +79,11 @@ canvas {
 }
 
 #bars {
-    height: 30px;
-    left: 50%;
+    left: 44%;
     margin: -30px 0 0 -20px;
     position: absolute;
-    top: 36%;
+    top: 40%;
+    width: 40px;
 }
 
 .bar {
