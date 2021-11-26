@@ -44,7 +44,7 @@ setInterval(() => {
     if (currentSpeed !== 0 ) {
         averageSpeed += currentSpeed
     }
-    if (seconde === 40) {
+    if (seconde === 4) {
         //console.log(isNaN(averageSpeed))
         if (averageSpeed < speeds[level.value][0]) {
             while (averageSpeed < speeds[level.value][0]) {
