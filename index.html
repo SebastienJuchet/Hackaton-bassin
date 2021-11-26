@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="mx-auto">
                     <a class="navbar-brand text-white fs-1" href="#">
-                        <img src="images/logo.png" alt="" width="40" height="auto" class="d-inline-block align-text-top me-2">
+                        <img src="images/logo.png" alt="" width="50" height="auto" class="d-inline-block align-text-top me-2">
                         SpeedZick</a>
                 </div>
             </div>
@@ -30,16 +30,27 @@
                 <label for="level" class="form-label">Choisissez votre vitesse de démarrage</label>
                 <div id="value-level">9-12 km/h</div>
                 <div id="test"></div>
-                <input type="range" class="form-range" min="0" max="5" id="level">
+                <input type="range" class="form-range my-3" min="0" max="5" id="level">
             </div>
         </div>
         <!-- End progressbar -->
-
+        <div id="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <!-- Map with button GO -->
-        <div class="d-flex justify-content-center my-3">
+        <div class="d-flex justify-content-center mt-3">
             <img class="border rounded-circle shadow-lg p-3 bg-white" src="images/run.png" width="120" height="auto" alt="">
         </div>
-        <div class="d-flex justify-content-center rounded my-3">
+        <div class="d-flex justify-content-center rounded mt-3">
             <div id='map'></div>
         </div>
         <!-- End Map with button GO -->
@@ -63,7 +74,7 @@
             const map = new mapboxgl.Map({
                 container: 'map', // container ID
                 style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                center: [-74.5, 40], // starting position [lng, lat]
+                center: [-0.56, 44.84], // starting position [lng, lat]
                 zoom: 9 // starting zoom
             });
         </script>
