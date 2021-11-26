@@ -18,8 +18,8 @@ navigator.geolocation.getCurrentPosition(
     {enableHighAccuracy: true, maximumAge: 10000}
 );
 
-let prevLat = 44.84;
-let prevLong = -0.56;
+let prevLat = 44.84138865638919;
+let prevLong = -0.5609858477163195;
 let successHandlerTime = function(position) {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
@@ -29,7 +29,7 @@ let successHandlerTime = function(position) {
         {lat: lat, lon: long},
         {unit: 'meters'}
     );
-    currentSpeed = diff / 1000 * 3600;
+    currentSpeed = diff / 1000 * 360;
     prevLat = lat;
     prevLong = long;
 };
@@ -42,11 +42,8 @@ setInterval(() => {
     divSpeed.innerHTML = `Votre vitesse est de ${currentSpeed ?? 0} km/h`
     let averageSpeed = 0;
     if (currentSpeed !== 0 ) {
-        averageSpeed += currentSpeed
+        averageSpeed = currentSpeed
     }
-    if (seconde === 10) {
-        averageSpeed /= 10
-        seconde = 0
         //console.log(isNaN(averageSpeed))
         if (averageSpeed < speeds[level.value][0]) {
             while (averageSpeed < speeds[level.value][0]) {
@@ -59,8 +56,7 @@ setInterval(() => {
             while (averageSpeed > speeds[level.value][1]) {
                 level.value ++;
                 valueLevel.innerHTML = vitesse[level.value];
-                //console.log(musics[level.value])
+                autoplayer(musics[level.value], speeds[level.value][2]);
             }
         }
-    }
-}, 1000)
+}, 10000)
