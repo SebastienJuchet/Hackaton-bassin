@@ -42,21 +42,23 @@ setInterval(() => {
     divSpeed.innerHTML = `Votre vitesse est de ${currentSpeed ?? 0} km/h`
     let averageSpeed = 0;
     if (currentSpeed !== 0 ) {
-        averageSpeed = currentSpeed
+        averageSpeed += currentSpeed
     }
+    if (seconde === 40) {
         //console.log(isNaN(averageSpeed))
         if (averageSpeed < speeds[level.value][0]) {
             while (averageSpeed < speeds[level.value][0]) {
-                level.value --;
+                level.value--;
                 valueLevel.innerHTML = vitesse[level.value];
             }
             autoplayer(musics[level.value], speeds[level.value][2]);
         }
         if (averageSpeed > speeds[level.value][1]) {
             while (averageSpeed > speeds[level.value][1]) {
-                level.value ++;
+                level.value++;
                 valueLevel.innerHTML = vitesse[level.value];
                 autoplayer(musics[level.value], speeds[level.value][2]);
             }
         }
+    }
 }, 10000)
