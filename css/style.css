@@ -47,6 +47,15 @@ body {
 nav {
     height: 70px;
 }
+footer{
+    background:#ccc;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top: 0;
+    height:100px;
+}
+
 
 @keyframes gradient {
     0% {
@@ -67,11 +76,7 @@ canvas {
 
     border-radius: 25% 10%;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 #bars {
     height: 30px;
     left: 50%;
