@@ -83,7 +83,6 @@ canvas {
     margin: -30px 0 0 -20px;
     position: absolute;
     top: 36%;
-    width: 40px;
 }
 
 .bar {
@@ -116,6 +115,16 @@ canvas {
 .bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
 .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+.bar:nth-child(11) { left: 41px; animation-duration: 402ms; }
+.bar:nth-child(12) { left: 45px; animation-duration: 470ms; }
+.bar:nth-child(13) { left: 49px; animation-duration: 415ms; }
+.bar:nth-child(14) { left: 53px; animation-duration: 442ms; }
+.bar:nth-child(15) { left: 57px; animation-duration: 427ms; }
+.bar:nth-child(16) { left: 61px; animation-duration: 400ms; }
+.bar:nth-child(17) { left: 65px; animation-duration: 448ms; }
+.bar:nth-child(18) { left: 69px; animation-duration: 415ms; }
+.bar:nth-child(19) { left: 73px; animation-duration: 460ms; }
+.bar:nth-child(20) { left: 77px; animation-duration: 400ms; }
 
 
 
